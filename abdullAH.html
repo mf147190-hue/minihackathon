@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="signupPage" class="page">
+        <h2>Signup</h2>
+        <input id="suName" type="text" placeholder="Name">
+        <input id="suEmail" type="email" placeholder="Email">
+        <input id="suPass" type="password" placeholder="Password">
+        <button onclick="signup()">Signup</button>
+        <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+    </div>
+
+    
+    <div id="loginPage" class="page hidden">
+        <h2>Login</h2>
+        <input id="loginEmail" type="email" placeholder="Email">
+        <input id="loginPass" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <span onclick="showSignup()">Signup</span></p>
+    </div>
+
+    
+    <div id="feedPage" class="page hidden">
+        <h2 id="welcomeText"></h2>
+
+        
+        <div class="create-post">
+            <textarea id="postText" placeholder="Write something..."></textarea>
+            <input id="postImage" type="text" placeholder="Image URL (optional)">
+            <button onclick="createPost()">Post</button>
+        </div>
+
+        
+        <input type="text" id="searchBar" placeholder="Search posts..." onkeyup="searchPosts()">
+
+        <select id="sortSelect" onchange="sortPosts()">
+            <option value="latest">Latest First</option>
+            <option value="oldest">Oldest First</option>
+            <option value="likes">Most Liked</option>
+        </select>
+
+                <div id="postsContainer"></div>
+    </div>
+<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    padding: 0;
+    margin: 0;
+}
+
+.page {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input, textarea, button, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.like-btn {
+    cursor: pointer;
+    color: red;
+}
